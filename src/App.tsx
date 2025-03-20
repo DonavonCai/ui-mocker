@@ -62,7 +62,7 @@ const App = () => {
           </a>
         </span>
       </header>
-      <Text text={"blah"} />
+      <Text fontSize={12} >Blah blah</Text>
     </div>
   )
 }

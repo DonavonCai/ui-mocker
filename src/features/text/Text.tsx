@@ -1,16 +1,11 @@
 import type { FC } from 'react';
 import type React from 'react';
-
-interface Props {
-    text: string;
-    children?: React.ReactNode;
-    cssClasses?: string;
-}
+import type { TextProps } from '../../types/component-types';
  
-export const Text: FC<Props> = (props: Props) => {
-    const { text, children, cssClasses } = props;
+export const Text: FC<TextProps> = (props: TextProps) => {
+    const { fontSize, text, children, cssClasses } = props;
 
-    return <p className={cssClasses}>
+    return <p className={cssClasses} style={{fontSize}}>
         {children !== undefined ? children : text}
     </p>
 }
