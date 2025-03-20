@@ -2,6 +2,7 @@ import "./App.css"
 import { Counter } from "./features/counter/Counter"
 import { Quotes } from "./features/quotes/Quotes"
 import {Text} from "./features/text/Text"
+import { VanillaCounter } from "./features/vanilla-counter/VanillaCounter"
 import logo from "./logo.svg"
 
 const App = () => {
@@ -63,6 +64,7 @@ const App = () => {
         </span>
       </header>
       <Text fontSize={12} >Blah blah</Text>
+      <VanillaCounter />
     </div>
   )
 }
